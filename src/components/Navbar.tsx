@@ -10,7 +10,14 @@ export default function Navbar() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-white font-bold py-8">
           <div className="flex h-16 items-center justify-between">
             <div className="flex-shrink-0 text-[1.45rem] font-bold">
-              NeuBooks
+              <span
+                className="bg-gradient-to-r from-blue-400 via-violet-500 to-rose-500 
+      bg-clip-text text-transparent 
+      font-extrabold tracking-tight text-3xl 
+      inline-block"
+              >
+                NeuBooks
+              </span>
             </div>
             <div className="flex space-x-8 text-md">
               <Link to="/books" className="relative px-2 py-1 group">
