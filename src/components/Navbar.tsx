@@ -9,12 +9,12 @@ export default function Navbar() {
       <BackgroundLines>
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-white font-bold py-8">
           <div className="flex h-16 items-center justify-between">
-            <div className="flex-shrink-0 text-[1.45rem] font-bold">
+            <div className="flex-shrink-0 text-[1.45rem] font-bold text-shadow-transparent">
               <span
                 className="bg-gradient-to-r from-blue-400 via-violet-500 to-rose-500 
       bg-clip-text text-transparent 
       font-extrabold tracking-tight text-3xl 
-      inline-block"
+      inline-block drop-shadow-[0_0_2px_rgba(255,0,128,0.7)]"
               >
                 NeuBooks
               </span>

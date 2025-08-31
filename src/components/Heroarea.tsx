@@ -1,7 +1,7 @@
 export default function Heroarea() {
   return (
     <div className="text-center py-28">
-      <h1 className="text-5xl font-extrabold tracking-wide leading-[4rem] bg-gradient-to-r from-gray-100 via-gray-300 to-gray-100 bg-clip-text text-transparent">
+      <h1 className="text-5xl font-extrabold tracking-wide leading-[4rem] bg-gradient-to-r from-gray-100 via-gray-300 to-gray-100 bg-clip-text text-transparent drop-shadow-[0_0_1px_rgba(255,0,128,0.7)]">
         Redefining the way you manage, borrow, <br /> experience books in the
         modern world.
       </h1>
