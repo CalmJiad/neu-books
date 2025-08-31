@@ -1,4 +1,5 @@
 import { Link } from "react-router";
+import Footer from "./Footer";
 import Heroarea from "./Heroarea";
 import { BackgroundLines } from "./ui/BackgroundLines";
 import BlueButton from "./ui/BlueButton";
@@ -49,6 +50,7 @@ export default function Navbar() {
           </div>
         </div>
         <Heroarea />
+        <Footer />
       </BackgroundLines>
     </>
   );
