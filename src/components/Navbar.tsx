@@ -3,10 +3,17 @@ import Footer from "./Footer";
 import Heroarea from "./Heroarea";
 import { BackgroundLines } from "./ui/BackgroundLines";
 import BlueButton from "./ui/BlueButton";
+import {
+  Modal,
+  ModalBody,
+  ModalContent,
+  ModalFooter,
+  ModalTrigger,
+} from "./ui/Modal";
 
 export default function Navbar() {
   return (
-    <>
+    <Modal>
       <BackgroundLines>
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-white font-bold py-8">
           <div className="flex h-16 items-center justify-between">
@@ -37,14 +44,14 @@ export default function Navbar() {
                                 transition-transform duration-300 group-hover:scale-x-100"
                 ></span>
               </Link>
-              <Link to="/borrow-summary" className="relative px-2 py-1 group">
+              <ModalTrigger className="relative px-2 py-1 group">
                 Borrow Summary
                 <span
                   className="absolute left-0 -bottom-0.5 h-0.5 w-full origin-left scale-x-0 
                                 bg-gradient-to-r from-blue-400 via-violet-500 to-rose-500 
                                 transition-transform duration-300 group-hover:scale-x-100"
                 ></span>
-              </Link>
+              </ModalTrigger>
             </div>
             <BlueButton btnname="About Us" />
           </div>
@@ -52,6 +59,20 @@ export default function Navbar() {
         <Heroarea />
         <Footer />
       </BackgroundLines>
-    </>
+      {/* 👇 Modal body content */}
+      <ModalBody>
+        <ModalContent>
+          <h2 className="text-2xl font-bold mb-4">Borrow Summary</h2>
+          <p className="text-gray-600 dark:text-gray-300">
+            Here you can show your borrow summary table, list of books, etc.
+          </p>
+        </ModalContent>
+        <ModalFooter>
+          <button className="px-4 py-2 rounded-md bg-blue-500 text-white hover:bg-blue-600">
+            Close
+          </button>
+        </ModalFooter>
+      </ModalBody>
+    </Modal>
   );
 }

@@ -1,3 +1,4 @@
+import { Outlet } from "react-router";
 import Navbar from "./components/Navbar";
 import MagicCursor from "./components/ui/MagicCursor";
 
@@ -6,6 +7,7 @@ export default function App() {
     <div>
       <MagicCursor SPLAT_RADIUS={0.08} SPLAT_FORCE={3500} />
       <Navbar />
+      <Outlet />
     </div>
   );
 }
